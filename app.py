@@ -61,10 +61,10 @@ input_df = user_input_features()
 
 # Select model
 model_options = {
-    # "Logistic Regression": "logistic_regression_model",
+    "Logistic Regression": "logistic_regression_model",
     "Decision Tree": "decision_tree_model",
-    # "Random Forest": "random_forest_model",
-    # "XGBoost": "xgboost_model"
+    "Random Forest": "random_forest_model",
+    "XGBoost": "xgboost_model"
 }
 model_choice = st.selectbox("Select Model", list(model_options.keys()))
 model = load_model(model_options[model_choice])
